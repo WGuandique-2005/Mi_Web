@@ -98,6 +98,22 @@
         footer p {
             margin: 0.5rem;
         }
+
+        /* CONTAINER */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container .col-md-6 {
+            width: 70%;
+            padding: 1rem;
+        }
+        .col-md-4{
+            width: 30%;
+            padding: 1rem;
+        }
     </style>
 </head>
 <header>
@@ -119,6 +135,14 @@
 </header>
 
 <body>
+    <div class="container">
+        <div class="col-md-7">
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
