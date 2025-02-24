@@ -78,6 +78,11 @@
             .hamburger {
                 display: flex;
             }
+
+            .container {
+                grid-template-columns: 100%;
+                padding: 1rem;
+            }
         }
 
         /* GENERAL */
@@ -114,6 +119,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-right: 1.5rem;
         }
 
         .col-side img {
