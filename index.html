@@ -5,153 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <style>
-        /* NAVBAR */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #4b93ff;
-            padding: 1rem;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            max-height: 50px;
-            margin-right: 10px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-links li {
-            margin-left: 1rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-
-        .nav-links a:hover {
-            color: #ddd;
-        }
-
-        /* Hamburger Menu */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .bar {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 4px 0;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background-color: #333;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links li {
-                margin: 1rem 0;
-                text-align: center;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #4b93ff;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer p {
-            margin: 0.5rem;
-        }
-
-        /* CONTAINER */
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container .col-md-6 {
-            width: 70%;
-            padding: 1rem;
-        }
-        .col-md-4{
-            width: 30%;
-            padding: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <picture><img src="image.png"></picture>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">William Guandique</a></li>
-            <li><a href="#">SMSS076423</a></li>
-            <li><a href="#">Ingeniería en Sistemas y Redes Informaticas</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-</header>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <picture>
+                    <img src="image.png" alt="Logo">
+                </picture>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">William Guandique - SMSS076423</a></li>
+                <li><a href="#">Briseily Solórzano - SMSS030723</a></li>
+                <li><a href="#">Ingeniería en Sistemas y Redes Informáticas</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
     <div class="container">
-        <div class="col-md-7">
-
+        <div class="col-main">
+            <h2>Bienvenido</h2>
+            <p>Este es el contenido principal.</p>
         </div>
-        <div class="col-md-3">
-
+        <div class="col-side">
+            <img src="side-image.jpg" alt="Imagen lateral">
         </div>
     </div>
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <footer>
+        <p>Examen Parcial - Computo I</p>
+        <p>Programación Computacional IV</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<footer>
-    <p>Examen Parcial - Computo I</p>
-    <p>Progrmación Computacional IV</p>
-</footer>
+
 </html>
