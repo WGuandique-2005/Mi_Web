@@ -11,17 +11,13 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">
-                <picture>
-                    <img src="image.png" alt="Logo">
-                </picture>
-            </div>
+            <div class="logo">LESSA</div>
             <ul class="nav-links">
                 <li><a href="#">William Guandique - SMSS076423</a></li>
                 <li><a href="#">Briseily Solórzano - SMSS030723</a></li>
-                <li><a href="#">Ingeniería en Sistemas y Redes Informáticas</a></li>
+                <li><a href="#">Ingeniria en Sistemas y Redes Informaticas</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" onclick="toggleMenu()">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -31,20 +27,22 @@
 
     <div class="container">
         <div class="col-main">
-            <h2>Bienvenido</h2>
-            <p>Este es el contenido principal.</p>
         </div>
         <div class="col-side">
-            <img src="side-image.jpg" alt="Imagen lateral">
         </div>
     </div>
 
-    <footer>
-        <p>Examen Parcial - Computo I</p>
-        <p>Programación Computacional IV</p>
-    </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
+<footer>
+    <p>Examen Parcial - Computo I</p>
+    <p>Programación Computacional IV</p>
+</footer>
 
 </html>
